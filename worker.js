@@ -3,7 +3,7 @@ export default {
     const url = new URL(request.url);
 
     // 🔧 CONFIGURAÇÃO
-    const TARGET = "http://137.131.176.224"; // ⚠️ use HTTP se SSL for inválido
+    const TARGET = "https://ws.koom.pp.ua"; // ⚠️ use HTTP se SSL for inválido
 
     const targetUrl = TARGET + url.pathname + url.search;
 
