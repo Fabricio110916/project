@@ -2,7 +2,7 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
 
-    const target = "https://137.131.176.224:443" + url.pathname + url.search;
+    const target = "https://my.koom.pp.ua:443" + url.pathname + url.search;
 
     const newHeaders = new Headers(request.headers);
 
@@ -15,7 +15,7 @@ export default {
 
     blocked.forEach(h => newHeaders.delete(h));
 
-    newHeaders.set("host", "137.131.176.224");
+    newHeaders.set("host", "my.koom.pp.ua");
 
     const response = await fetch(target, {
       method: request.method,
